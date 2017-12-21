@@ -16,5 +16,14 @@ namespace Codewars_MainInTheWest
             //assert
             Assert.AreEqual(false,bucketHasGold);
         }
+
+        [TestMethod]
+        public void Input_1gold_Should_Be_true()
+        {
+            var input = new string[] { "gold" };
+            var kata = new Kata();
+            var bucketHasGold = kata.CheckTheBucket(input);
+            Assert.AreEqual(true, bucketHasGold);
+        }
     }
 }
