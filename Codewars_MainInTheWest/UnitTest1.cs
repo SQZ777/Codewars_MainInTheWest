@@ -8,22 +8,13 @@ namespace Codewars_MainInTheWest
         [TestMethod]
         public void Input_StringEmpty_Should_Be_false()
         {
-            //arrange
-            var input = new string[] { string.Empty };
-            var kata = new Kata();
-            //actual
-            var bucketHasGold = kata.CheckTheBucket(input);
-            //assert
-            Assert.AreEqual(false,bucketHasGold);
+            Assert.AreEqual(false,new Kata().CheckTheBucket(new string[] { string.Empty }));
         }
 
         [TestMethod]
         public void Input_1gold_Should_Be_true()
         {
-            var input = new string[] { "gold" };
-            var kata = new Kata();
-            var bucketHasGold = kata.CheckTheBucket(input);
-            Assert.AreEqual(true, bucketHasGold);
+            Assert.AreEqual(true, new Kata().CheckTheBucket(new string[] { "gold" }));
         }
     }
 }
