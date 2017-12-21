@@ -14,7 +14,7 @@ namespace Codewars_MainInTheWest
             //actual
             var bucketHasGold = kata.CheckTheBucket(input);
             //assert
-            Assert.AreEqual(input,bucketHasGold);
+            Assert.AreEqual(false,bucketHasGold);
         }
     }
 }
