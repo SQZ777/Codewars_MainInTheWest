@@ -6,7 +6,7 @@ namespace Codewars_MainInTheWest
     {
         public bool CheckTheBucket(string[] bucket)
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
